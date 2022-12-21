@@ -1,14 +1,10 @@
 import Image from "next/image";
-
+import SingleEvent from "../../../src/components/events/single-event";
 function EventPage({ data }) {
   console.log("esto es el clg de data", data);
   return (
     //<a href="/"> Ir al principio </a>
-    <div>
-        <Image src={data.image} width={1000} height={500} alt={data.title} />
-        <h1>{data.title}</h1>
-        <p>{data.description}</p>
-    </div>
+    <SingleEvent data={data}/>
   );
 }
 
