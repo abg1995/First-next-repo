@@ -1,22 +1,11 @@
-import Image from "next/image";
-import Link from "next/link";
+import AllEvents from '../../src/components/events/events-page';
 
 function EventsPage({data}){
 
     return(
-        <div>
-         <h1>Events index</h1>
-
-         <a href="/">Get home</a> <br /><br /><br />
-        <div>
-            {data.map( ev => (
-                <Link key={ev.id} href={`/events/${ev.id}`}>
-                <Image src={ev.image} width={300} height={300}  /> <h2>{ev.title}</h2></Link>
-            ))}
-    
-
-        </div>
-        </div>
+      <>
+      <AllEvents data={data}/> 
+      </>
     )
 }
 
