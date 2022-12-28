@@ -1,5 +1,5 @@
-import Image from "next/image";
 import SingleEvent from "../../../src/components/events/single-event";
+
 function EventPage({ data }) {
   console.log("esto es el clg de data", data);
   return (
