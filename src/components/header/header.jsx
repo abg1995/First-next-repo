@@ -5,6 +5,7 @@ function Header() {
   return (
     <>
       <header>
+        <div >
         <div className="topNav">
           <Image src={"/images/logo.png"} width={50} height={50} />
           <nav>
@@ -31,6 +32,8 @@ function Header() {
           </nav>
         </div>
         <h1>Algun titulo m,jbnsdf</h1>
+        </div>
+       
       </header>
       <br />
       <br />
