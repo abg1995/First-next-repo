@@ -1,25 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
+
+import CatEvent from "../../../src/components/events/catEvent";
 
 function EventsCatPage({data, pageName}) {
   return (
     <>
-      <h1> Events in {pageName.toUpperCase()} </h1><br /><br />
-
-      <div>
-        {data.map((ev) => (
-          <Link key={ev.id} href={`/events/${ev.city}/${ev.id}`} passHref>
-                
-                  <Image width={200} height={200} src={ev.image} alt={ev.title} />
-                  <h2>{ev.title}</h2>
-                  <p>{ev.description}</p>
-                  </Link>
- 
-        ) )}
-
-      <a href="/events">Get back to events page</a><br /><br /><br />
-
-      </div>
+      <CatEvent data={data} pageName={pageName}/>
 
     </>
   );
