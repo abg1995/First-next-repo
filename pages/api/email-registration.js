@@ -35,7 +35,7 @@ export default function handler(req, res, next) {
   if (method === "POST") {
     const { email, eventId } = req.body;
 
-  if( !email || !email.include('@')){
+  if( !email || !email.includes('@')){
     res.status(422).json({message: 'invalid email address'});
     return;
   }
