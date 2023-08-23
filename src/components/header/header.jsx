@@ -31,7 +31,7 @@ function Header() {
             <img />
           </nav>
         </div>
-        <h1>Algun titulo m,jbnsdf</h1>
+        <h1>Eve-App! Find an event in your city!</h1>
         </div>
        
       </header>
